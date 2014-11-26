@@ -36,15 +36,15 @@ A Semantic Version will be in the format {major}.{minor}.{patch}-{tag}
 
 - Release
  
-`v7.3.5`
+  `v7.3.5`
 
 - Prerelease
 
-`v7.3.5-beta`
+  `v7.3.5-beta`
 
-`v7.3.5-beta.0`
+  `v7.3.5-beta.0`
 
-`v7.3.5-beta.1`
+  `v7.3.5-beta.1`
 
 
 ## Tag
