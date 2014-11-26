@@ -28,7 +28,24 @@ The goal of this document is to layout _git_ convestions that will aid DeployR r
 
 ## Semantic Versioning
 
-For the official Semantic Version docs head to [semver.org](http://semver.org/), this is a quick guide for people getting started and how SemVer is used in GitVersion.
+For the official Semantic Version docs head to [semver.org](http://semver.org/), this is a quick guide.
+
+### Format
+
+A Semantic Version will be in the format {major}.{minor}.{patch}-{tag}
+
+- Release
+ 
+`v7.3.5`
+
+- Prerelease
+
+`v7.3.5-beta`
+
+`v7.3.5-beta.0`
+
+`v7.3.5-beta.1`
+
 
 ## Tag
 
