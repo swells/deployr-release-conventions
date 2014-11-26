@@ -38,11 +38,11 @@ Example:
  
   `v7.3.5`
 
-  `v7.3.5-beta.0`
+  `v7.3.5-beta-0`
 
-  `v7.3.5-beta.2`
+  `v7.3.5-beta-2`
 
-  `v7.3.5-beta.3`
+  `v7.3.5-beta-3`
 
 ### Prerelease Identifiers
 
@@ -50,7 +50,11 @@ An additional (optional) identifier string that will append the value of the ver
 
 Example:
 
-  `v7.3.5-beta.0`
+  `v7.3.5-alpha-0`
+  
+  `v7.3.5-beta-2`
+
+  `v7.3.5-rc-1`
 
 ## Tag
 
