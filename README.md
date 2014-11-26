@@ -23,11 +23,9 @@ The goal of this document is to layout _git_ convestions that will aid DeployR r
   - Referencing issues
 - Examples
 
-Release steps
-=============
+# Release steps
 
-Tag
----
+## Tag
 
 
 
