@@ -81,10 +81,10 @@ This produces a version string of the allowing format:
 ```
 v7.3.0-0-123456789123456789dsdfsfsf
 ^      ^  ^
-|       |   |
-|       |   SHA of HEAD
-|       |
-|       number of commits since last tag
+|      |   |
+|      |   SHA of HEAD
+|      |
+|      number of commits since last tag
 |
 last tag
 ```
