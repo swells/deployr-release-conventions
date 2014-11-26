@@ -28,24 +28,29 @@ The goal of this document is to layout _git_ convestions that will aid DeployR r
 
 ## Semantic Versioning
 
-For the official Semantic Version docs head to [semver.org](http://semver.org/), this is a quick guide.
+For the official Semantic Version docs head to [semver.org](http://semver.org/).
 
 ### Format
 
 A Semantic Version will be in the format {major}.{minor}.{patch}-{tag}
 
-- Release
+Example:
  
   `v7.3.5`
 
-- Prerelease
-
-  `v7.3.5-beta`
-
   `v7.3.5-beta.0`
 
-  `v7.3.5-beta.1`
+  `v7.3.5-beta.2`
 
+  `v7.3.5-beta.3`
+
+### Prerelease Identifiers
+
+An additional (optional) identifier string that will append the value of the version string as a prerelease identifier.
+
+Example:
+
+  `v7.3.5-beta.0`
 
 ## Tag
 
