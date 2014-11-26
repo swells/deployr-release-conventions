@@ -5,8 +5,8 @@ The goal of this document is to layout _git_ convestions that will aid DeployR r
 
 - [Release steps](#user-content-release-steps)
   - [Semantic Versioning](#user-content-semantic-versioning)
-  - [Tagging _master_](#user-content-tag)
-  - Marking tag as _current release_
+  - [Tagging](#user-content-tagging)
+  - [Marking _release_](#user-content-marking_release)
   - Generating CHANGELOG.md
     - Recognizing unimportant commits
     - Provide more information when browsing the history
@@ -28,7 +28,7 @@ The goal of this document is to layout _git_ convestions that will aid DeployR r
 
 ## Semantic Versioning
 
-For the official Semantic Version docs head to [semver.org](http://semver.org/).
+For the official Semantic Version documentation head to [semver.org](http://semver.org/). This is a breif introduction and does not cover all parts of semantic versioning.
 
 ### Format
 
@@ -56,7 +56,14 @@ A possbile prerelease identifier for _v7.3.5_ could be:
 
   `v7.3.5-rc-1`
 
-## Tag
+## Tagging
+
+When the state of the release branch is ready to become a real release, some actions need to be carried out. 
+
+- The release branch is merged into master (since every commit on master is a new release by definition). 
+- The commit on master must be tagged for easy future reference to this historical version. 
+
+To _tag_ master:
 
 1. Use tags to mark commits with version numbers:
 
@@ -70,28 +77,22 @@ A possbile prerelease identifier for _v7.3.5_ could be:
    $ git push --tags
    ```
 
-You can then we use the describe command:
-
-```
-$ git describe --tags --long
-```
-
 This produces a version string of the allowing format:
 
 ```
 v7.3.0-0-123456789123456789dsdfsfsf
 ^      ^  ^
-|      |   |
-|      |   SHA of HEAD
+|      |  |
+|      |  SHA of HEAD
 |      |
 |      number of commits since last tag
 |
 last tag
 ```
 
+## Marking Release
 
-
-
+Marking the tagged historical version as a _release_ is done from Github using their [Releases](https://github.com/blog/1547-release-your-software) workflow.
 
 
 
