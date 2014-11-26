@@ -44,11 +44,11 @@ Example:
 
   `v7.3.5-beta-3`
 
-### Prerelease Identifiers
+#### Prerelease Identifiers
 
-An additional (optional) identifier string that will append the value of the version string as a prerelease identifier.
+An additional (optional) string will be append to the value of the version string as a prerelease identifier.
 
-Example:
+A possbile prerelease identifier for _v7.3.5_ could be: 
 
   `v7.3.5-alpha-0`
   
@@ -58,11 +58,38 @@ Example:
 
 ## Tag
 
-```bash
+1. Use tags to mark commits with version numbers:
 
-$ 
+   ```
+   $ git tag -a v7.3.0 -m 'Version 7.3.0'
+   ```
+
+2. We have to then _push tags upstream_ because this is not done by default:
+
+   ```
+   $ git push --tags
+   ```
+
+You can then we use the describe command:
 
 ```
+$ git describe --tags --long
+```
+
+This produces a version string of the allowing format:
+
+```
+v7.3.0-0-123456789123456789dsdfsfsf
+^      ^  ^
+|       |   |
+|       |   SHA of HEAD
+|       |
+|       number of commits since last tag
+|
+last tag
+```
+
+
 
 
 
