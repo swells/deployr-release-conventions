@@ -4,7 +4,7 @@ Deployr Release Conventions
 The goal of this document is to layout _git_ convestions that will aid DeployR releases in order to inform the public of what changes have been made in each version. This is nessary so that the user can make a decision about when to upgrade. 
 
 - [Release steps](#user-content-release-steps)
-  - Tagging _master_
+  - [Tagging _master_](#user-content-tag)
   - Marking tag as _current release_
   - Generating CHANGELOG.md
     - Recognizing unimportant commits
@@ -25,4 +25,12 @@ The goal of this document is to layout _git_ convestions that will aid DeployR r
 
 Release steps
 =============
+
+Tag
+---
+
+
+
+
+
 
