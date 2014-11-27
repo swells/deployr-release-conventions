@@ -1,7 +1,7 @@
 Deployr Release Conventions
 ===========================
 
-The goal of this document is to layout _git_ convestions that will aid DeployR releases in order to inform the public of what changes have been made in each version. This is nessary so that the user can make a decision about when to upgrade. 
+The goal of this document is to layout _git_ convestions that will aid DeployR releases in order to inform the public of what changes have been made in each version. This is nessary at the development and release stage such that the user can make a decision about when to upgrade. 
 
 - [Release steps](#user-content-release-steps)
   - [Semantic Versioning](#user-content-semantic-versioning)
