@@ -10,8 +10,8 @@ The goal of this document is to layout _git_ conventions that will aid DeployR r
   - Generating CHANGELOG.md
     - Recognizing unimportant commits
     - Provide more information when browsing the history
-  - Repository notes
-    - WIKI
+  - [Repository wiki](#user-repository-wiki)
+    - [Template](#user-template)
     - History
     - Changelog rollup
 - Format of the commit message
@@ -117,9 +117,46 @@ For example, the _release title_ for version:
 
 Release notes should be brief and contain the following:
 
-1. A _Release Announcement_ link.
+1. A _Release Announcement_ link. This link will point to the offical marketing announcement.
 2. A _Change History Rollup_ link. See the [change log](#change-log) section for more information on how to create it.
-3. A note on how to get ahold of the release via git:
+3. A note on how to get a hold of the release via git:
   `Github: git checkout v7.3.3-beta-1`
 4. The attached binary zip of the release build (download this for local deployments)
+
+## Repository wiki
+
+Each repository should have a wiki that follows the [template](#template) below. The official user guides and API documents are hosted on [deployr.revolutionanalytics.com](deployr.revolutionanalytics.com) when appropriate. The repository's wiki is where you can maintain a living document that are relevant to the people who are interested in contributing code or feedback.
+
+### Template
+
+```
+# Welcome to the {YOUR_REPOSITORY} development wiki!
+
+{YOUR_REPOSITORY}'s official user guides and API docs are hosted on [deployr.revolutionanalytics.com](deployr.revolutionanalytics.com). This wiki is where we maintain a living document that is relevant to the people who are interested in contributing code or feedback.
+
+# Current Release
+
+## {YOUR_REPOSITORY} {SEMANTIC_VERSION}
+
+- Link --> GitHub release notes page
+- Link --> {YOUR_REPOSITORY} {SEMANTIC_VERSION} Change History Rollup
+- Link --> Zip dist file
+- Link --> Maven Central repository 'ArtifactId' (when appropriate)
+- Link --> npm module (when appropriate)
+
+## Past Releases
+
+- {YOUR_REPOSITORY} {SEMANTIC_VERSION} Change History Rollup
+- {YOUR_REPOSITORY} {SEMANTIC_VERSION} Change History Rollup
+- {YOUR_REPOSITORY} {SEMANTIC_VERSION} Change History Rollup
+...
+...
+...
+
+```
+
+YUI's official user guides and API docs are hosted on yuilibrary.com, but this wiki is where we maintain living documents that are relevant to people who are interested in contributing code or feedback to YUI.
+
+
+
 
