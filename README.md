@@ -106,7 +106,14 @@ In Github:
 
 ### Release Title Convention
 
-The title of a release should only contain its corresponding [semantic version](Semantic Versioning) minus the **v** from the version string. For example, the _release title_ for version _v7.3.3_ would be `7.3.3`.
+The title of a release should only contain its corresponding [semantic version](Semantic Versioning) minus the **v** from the version string. In addition, if the semantic version contains a [prerelease identifier](#prerelease-identifiers) replace the delimited characters **-** with a space.
+
+For example, the _release title_ for version:
+
+- _v7.3.3_  ----> `7.3.3`. 
+- _v7.3.3-beta-1_  ----> `7.3.3 beta 1`
+
+For example, the _release title_ for version _v7.3.3_ would be `7.3.3`. 
 
 ### Release Notes Convention
 
