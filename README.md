@@ -106,16 +106,20 @@ In Github:
 
 ### Release Title Convention
 
-The title of a release should only contain its corresponding [semantic version](Semantic Versioning) minus the **v** from the version string. In addition, if the semantic version contains a [prerelease identifier](#prerelease-identifiers) replace the delimited characters **-** with a space.
+The title of a release should only contain its corresponding [semantic version](Semantic Versioning) minus the **v** from the version string. In addition, if the semantic version contains a [prerelease identifier](#prerelease-identifiers) replace the delimited **-** character with a space.
 
 For example, the _release title_ for version:
 
-- _v7.3.3_  ----> `7.3.3`. 
+- _v7.3.3_  ----> `7.3.3`
 - _v7.3.3-beta-1_  ----> `7.3.3 beta 1`
-
-For example, the _release title_ for version _v7.3.3_ would be `7.3.3`. 
 
 ### Release Notes Convention
 
+Release notes should be brief and contain the following:
 
+1. A _Release Announcement_ link.
+2. A _Change History Rollup_ link. See the [change log](#change-log) section for more information on how to create it.
+3. A note on how to get ahold of the release via git:
+  `Github: git checkout v7.3.3-beta-1`
+4. The attached binary zip of the release build (download this for local deployments)
 
