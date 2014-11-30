@@ -77,7 +77,7 @@ To _tag_ master:
    $ git push --tags
    ```
 
-This produces a version string of the allowing format:
+This produces a version string of the allowing format: 
 
 ```
 v7.3.0-0-123456789123456789dsdfsfsf
@@ -92,7 +92,14 @@ last tag
 
 ## Marking Release
 
-Marking the tagged historical version as a _release_ is done from Github using their [Releases](https://github.com/blog/1547-release-your-software) workflow.
+Once the master branch has been [tagged](#tagging) with the appropriate [release points](#semantic-versioning), we can begin to prepair that tag for a release. Marking the tagged historical version as a _release_ is done from Github using their [Releases](https://github.com/blog/1547-release-your-software) workflow.
 
+In Github:
+
+1. Click the _releases_ link at the top of the repository
+2. Click the _Create a new release_ button
+3. Choose the _Tag version_ from the drop-down list (or input feild if this is the first release)
+4. Give the release a title. _Release titles_ should adhear to the [release title conventions](#title-conventions)
+5. Add release notes. _Release notes_ should adhear to the [release notes conventions](#notes-conventions)
 
 
