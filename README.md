@@ -1,7 +1,7 @@
-Deployr Release Conventions
+DeployR Release Conventions
 ===========================
 
-The goal of this document is to layout _git_ convestions that will aid DeployR releases in order to inform the public of what changes have been made in each version. This is nessary at the development and release stage such that the user can make a decision about when to upgrade. 
+The goal of this document is to layout _git_ conventions that will aid DeployR releases in order to inform the public of what changes have been made in each version. This is necessary at the development and release stage such that the user can make a decision about when to upgrade. 
 
 - [Release steps](#user-content-release-steps)
   - [Semantic Versioning](#user-content-semantic-versioning)
@@ -48,7 +48,7 @@ Example:
 
 An additional (optional) string will be append to the value of the version string as a prerelease identifier.
 
-A possbile prerelease identifier for _v7.3.5_ could be: 
+A possible prerelease identifier for _v7.3.5_ could be: 
 
   `v7.3.5-alpha-0`
   
@@ -92,14 +92,23 @@ last tag
 
 ## Marking Release
 
-Once the master branch has been [tagged](#tagging) with the appropriate [release points](#semantic-versioning), we can begin to prepair that tag for a release. Marking the tagged historical version as a _release_ is done from Github using their [Releases](https://github.com/blog/1547-release-your-software) workflow.
+Once the master branch has been [tagged](#tagging) with the appropriate [release points](#semantic-versioning), we can begin to prepare that tag for a release. Marking the tagged historical version as a _release_ is done from Github using their [Releases](https://github.com/blog/1547-release-your-software) workflow.
 
 In Github:
 
-1. Click the _releases_ link at the top of the repository
-2. Click the _Create a new release_ button
-3. Choose the _Tag version_ from the drop-down list (or input feild if this is the first release)
-4. Give the release a title. _Release titles_ should adhear to the [release title conventions](#title-conventions)
-5. Add release notes. _Release notes_ should adhear to the [release notes conventions](#notes-conventions)
+1. Click the _releases_ link at the top of the repository.
+2. Click the _Create a new release_ button.
+3. Choose the _Tag version_ from the drop-down list (or input field if this is the first release).
+4. Give the release a title based on the [semantic version](#semantic-versioning). _Release titles_ should adhere to the [release title conventions](#release-title-convention).
+5. Add release notes. _Release notes_ should adhere to the [release notes conventions](#release-notes-convention).
+6. If appropriate, attached the release _binaries_ by dragging and dropping them to the page or via the file chooser.
+7. Finally, publish the tagged release by clicking the _Publish release_ button.
+
+### Release Title Convention
+
+The title of a release should only contain its corresponding [semantic version](Semantic Versioning) minus the **v** from the version string. For example, the _release title_ for version _v7.3.3_ would be `7.3.3`.
+
+### Release Notes Convention
+
 
 
