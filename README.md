@@ -6,12 +6,12 @@ The goal of this document is to layout _git_ conventions that will aid DeployR r
 - [Release steps](#user-content-release-steps)
   - [Semantic Versioning](#user-content-semantic-versioning)
   - [Tagging](#user-content-tagging)
-  - [Marking _release_](#user-content-marking_release)
+  - [Marking _release_](#user-content-marking-release)
   - Generating CHANGELOG.md
     - Recognizing unimportant commits
     - Provide more information when browsing the history
-  - [Repository wiki](#user-repository-wiki)
-    - [Template](#user-template)
+  - [Repository wiki](#user-content-repository-wiki)
+    - [Template](#user-content-template)
     - History
     - Changelog rollup
 - Format of the commit message
