@@ -125,15 +125,16 @@ Release notes should be brief and contain the following:
 
 ## Repository wiki
 
-Each repository should have a wiki that follows the [template](#template) below. The official user guides and API documents are hosted on [deployr.revolutionanalytics.com](deployr.revolutionanalytics.com) when appropriate. The repository's wiki is where you can maintain a living document that are relevant to the people who are interested in contributing code or feedback.
+Each repository should have a wiki that follows the [template](#template) below. The official user guides and API documents are hosted on [deployr.revolutionanalytics.com](http://deployr.revolutionanalytics.com) when appropriate. The repository's wiki is where you can maintain a living document that are relevant to the people who are interested in contributing code or feedback.
 
 ### Template
 
 ```
 # Welcome to the {YOUR_REPOSITORY} development wiki!
 
-{YOUR_REPOSITORY}'s official user guides and API docs are hosted on _http://deployr.revolutionanalytics.com_. 
-This wiki is where we maintain a living document that is relevant to the people who are interested in 
+{YOUR_REPOSITORY}'s official user guides and API docs are hosted on 
+http://deployr.revolutionanalytics.com. This wiki is where we maintain 
+a living document that is relevant to the people who are interested in 
 contributing code or feedback.
 
 # Current Release
@@ -163,8 +164,6 @@ TDB
 - Link --> Contribution Standards (TBD)
 
 ```
-
-YUI's official user guides and API docs are hosted on yuilibrary.com, but this wiki is where we maintain living documents that are relevant to people who are interested in contributing code or feedback to YUI.
 
 
 
