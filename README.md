@@ -132,7 +132,9 @@ Each repository should have a wiki that follows the [template](#template) below.
 ```
 # Welcome to the {YOUR_REPOSITORY} development wiki!
 
-{YOUR_REPOSITORY}'s official user guides and API docs are hosted on [deployr.revolutionanalytics.com](deployr.revolutionanalytics.com). This wiki is where we maintain a living document that is relevant to the people who are interested in contributing code or feedback.
+{YOUR_REPOSITORY}'s official user guides and API docs are hosted on _http://deployr.revolutionanalytics.com_. 
+This wiki is where we maintain a living document that is relevant to the people who are interested in 
+contributing code or feedback.
 
 # Current Release
 
@@ -146,12 +148,19 @@ Each repository should have a wiki that follows the [template](#template) below.
 
 ## Past Releases
 
-- {YOUR_REPOSITORY} {SEMANTIC_VERSION} Change History Rollup
-- {YOUR_REPOSITORY} {SEMANTIC_VERSION} Change History Rollup
-- {YOUR_REPOSITORY} {SEMANTIC_VERSION} Change History Rollup
+- Link --> {YOUR_REPOSITORY} {SEMANTIC_VERSION} Change History Rollup
+- Link --> {YOUR_REPOSITORY} {SEMANTIC_VERSION} Change History Rollup
+- Link --> {YOUR_REPOSITORY} {SEMANTIC_VERSION} Change History Rollup
 ...
-...
-...
+
+# Future
+
+TDB
+
+# Development
+
+- Link --> Deprecation Policy (TBD)
+- Link --> Contribution Standards (TBD)
 
 ```
 
