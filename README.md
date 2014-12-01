@@ -115,7 +115,7 @@ For example, the _release title_ for version:
 Release notes should be brief and contain the following:
 
 1. A _Release Announcement_ link. This link will point to the offical marketing announcement.
-2. A _Change History Rollup_ link. See the [change log](#change-log) section for more information on how to create it.
+2. A _Change History Rollup_ link. See the [change log](#changelog) section for more information on how to create it.
 3. A note on how to get a hold of the release via git:
   `Github: git checkout v7.3.3-beta-1`
 4. The attached binary zip of the release build (download this for local deployments)
@@ -130,23 +130,23 @@ The generated `CHANGELOG.md` will contain three sections:
 
 - New features
 
-New features in this release:
+  New features in this release:
 
-```
-$ git log <last release> HEAD --grep feat
-```
+  ```
+  $ git log <last release> HEAD --grep feat
+  ```
 
 - Bug fixes
 
-```
-$ git log <last release> HEAD --grep fix
-```
+  ```
+  $ git log <last release> HEAD --grep fix
+  ```
 
 - Breaking changes
 
-```
-$ git log <last release> HEAD --grep BREAKING
-```
+  ```
+  $ git log <last release> HEAD --grep BREAKING
+  ```
 
 ## Repository wiki
 
