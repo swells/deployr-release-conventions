@@ -205,13 +205,14 @@ The subject line contains a succinct description of the change to the logic.
 
 The allowed {types} are as follows:
 
-feat -> feature
-fix -> bug fix
-docs -> documentation
-style -> formatting
-refactor
-test -> adding missing tests
-chore -> maintenance
+- feat -> feature
+- fix -> bug fix
+- docs -> documentation
+- style -> formatting
+- refactor
+- test -> adding missing tests
+- chore -> maintenance
+
 The {scope} can be anything specifying place of the commit change e.g. the controller, the client, the logger, etc.
 
 The {subject} needs to use imperative, present tense: “change”, not “changed” nor “changes”. The first letter should not be capitalized, and there is no dot (.) at the end.
