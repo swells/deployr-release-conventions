@@ -5,15 +5,15 @@ DeployR Release Conventions
 
 The goal of this document is to layout _git_ conventions that will aid DeployR releases in order to inform the public of what changes have been made in each version. This is necessary both at the development and release stages such that the user can make a decision about when to upgrade. 
 
+- [Release checklist](#user-content-release-checklist)
 - [Release steps](#user-content-release-steps)
   - [Semantic versioning](#user-content-semantic-versioning)
   - [Tagging](#user-content-tagging)
-  - [Marking _release_](#user-content-marking-release)
   - [Changelog](#user-content-changelog)
     - [Generating CHANGELOG.md](#user-content-generating-changelogmd)
   - [Repository wiki](#user-content-repository-wiki)
     - [Template](#user-content-template)
-  - [Release checklist](#release-checklist)
+  - [Marking release](#user-content-marking-release)
 - [Format of the commit message](#user-content-format-of-the-commit-message)
   - [Subject line](#user-content-subject-line)
   - [Message body](#user-content-message-body)
@@ -21,6 +21,27 @@ The goal of this document is to layout _git_ conventions that will aid DeployR r
     - [Breaking changes](#user-content-breaking-changes)
     - [Referencing issues](#user-content-referencing-issues)
   - [Examples](#user-content-examples)
+
+# Release checklist
+
+These instructions are to assist the DeployR maintainers with creating a new product release. 
+
+1. Create the next milestone
+2. Move any open issues from the current release to the next milestone
+3. Close the current milestone
+4. Commit and push the deployr/{REPOSITORY} release and [tag](user-content-tagging)
+
+  ```
+  $ git commit -a -m 'bump to vX.Y.Z'
+  $ git push origin master
+  $ git tag -a vX.Y.Z -m 'Version vX.Y.Z'
+  $ git push --tags origin vX.Y.Z
+  ```
+
+5. Update version fields in packages/npm/Maven to next version
+6. Build [CHANGELOG.md](#user-content-generating-changelogmd)
+7. Update the [Repository wiki](#user-content-repository-wiki) with a link to the release's `CHANGELOG.md`
+8. Mark the [release](#user-content-marking-release)
 
 # Release steps
 
@@ -87,39 +108,6 @@ v7.3.0-0-123456789123456789dsdfsfsf
 |
 last tag
 ```
-
-## Marking Release
-
-Once the master branch has been [tagged](#tagging) with the appropriate [release points](#semantic-versioning), we can begin to prepare that tag for a release. Marking the tagged historical version as a _release_ is done from Github using their [Releases](https://github.com/blog/1547-release-your-software) workflow.
-
-In Github:
-
-1. Click the _releases_ link at the top of the repository.
-2. Click the _Create a new release_ button.
-3. Choose the _Tag version_ from the drop-down list (or input field if this is the first release).
-4. Give the release a title based on the [semantic version](#semantic-versioning). _Release titles_ should adhere to the [release title conventions](#release-title-convention).
-5. Add release notes. _Release notes_ should adhere to the [release notes conventions](#release-notes-convention).
-6. If appropriate, attached the release _binaries_ by dragging and dropping them to the page or via the file chooser.
-7. Finally, publish the tagged release by clicking the _Publish release_ button.
-
-### Release Title Convention
-
-The title of a release should only contain its corresponding [semantic version](Semantic Versioning) minus the **v** from the version string. In addition, if the semantic version contains a [prerelease identifier](#prerelease-identifiers) replace the delimited **-** character with a space.
-
-For example, the _release title_ for version:
-
-- _v7.3.3_  ----> `7.3.3`
-- _v7.3.3-beta-1_  ----> `7.3.3 beta 1`
-
-### Release Notes Convention
-
-Release notes should be brief and contain the following:
-
-1. A _Release Announcement_ link. This link will point to the official marketing announcement.
-2. A _Change History Rollup_ link. See the [change log](#changelog) section for more information on how to create it.
-3. A note on how to get a hold of the release via git:
-  `Github: git checkout v7.3.3-beta-1`
-4. The attached binary zip of the release build (download this for local deployments)
 
 ## Changelog
 
@@ -222,24 +210,40 @@ TDB
 
 ```
 
-## Release checklist
+## Marking Release
 
-These instructions are to assist the DeployR maintainers with creating a new product release. 
+Once the master branch has been [tagged](#tagging) with the appropriate [release points](#semantic-versioning), we can begin to prepare that tag for a release. Marking the tagged historical version as a _release_ is done from Github using their [Releases](https://github.com/blog/1547-release-your-software) workflow.
 
-- Create the next milestone
-- Move any open issues from the current release to the next milestone
-- Close the current milestone
-- Commit and push the deployr/{REPOSITORY} release and tag
+In Github:
 
-  ```
-  $ git commit -a -m 'bump to vX.Y.Z'
-  $ git push origin master
-  $ git tag -a vX.Y.Z -m 'Version vX.Y.Z'
-  $ git push --tags origin vX.Y.Z
-  ```
+1. Click the _releases_ link at the top of the repository.
+2. Click the _Create a new release_ button.
+3. Choose the _Tag version_ from the drop-down list (or input field if this is the first release).
+4. Give the release a title based on the [semantic version](#semantic-versioning). _Release titles_ should adhere to the [release title conventions](#release-title-convention).
+5. Add release notes. _Release notes_ should adhere to the [release notes conventions](#release-notes-convention).
+6. If appropriate, attached the release _binaries_ by dragging and dropping them to the page or via the file chooser.
+7. Finally, publish the tagged release by clicking the _Publish release_ button.
 
-- update version fields in packages to next version
+### Release Title Convention
 
+The title of a release should only contain its corresponding [semantic version](Semantic Versioning) minus the **v** from the version string. In addition, if the semantic version contains a [prerelease identifier](#prerelease-identifiers) replace the delimited **-** character with a space.
+
+For example, the _release title_ for version:
+
+- _v7.3.3_  ----> `7.3.3`
+- _v7.3.3-beta-1_  ----> `7.3.3 beta 1`
+
+### Release Notes Convention
+
+Release notes should be brief and contain the following:
+
+1. A _Release Announcement_ link. This link will point to the official marketing announcement.
+2. A _Change History Rollup_ link. See the [change log](#changelog) section for more information on how to create it.
+3. A note on how to get a hold of the release via git:
+  `Github: git checkout v7.3.3-beta-1`
+4. The attached binary zip of the release build (download this for local deployments)
+ 
+ 
 ## Format of the Commit Message
 
 ```
