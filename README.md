@@ -242,7 +242,7 @@ Or in the case of multiple issues:
 
 ## Examples
 
-- feat (feature)
+- *feat (feature)*
 
   feat($browser): onUrlChange event (popstate/hashchange/polling)
 
