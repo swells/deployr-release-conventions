@@ -24,7 +24,7 @@ The goal of this document is to layout _git_ conventions that will aid DeployR r
 
 # Release checklist
 
-These instructions are to assist the DeployR maintainers with creating a new product release. 
+These instructions are to assist the DeployR maintainers with creating a new product release through git/Github:
 
 1. Create the next milestone
 2. Move any open issues from the current release to the next milestone
