@@ -30,12 +30,14 @@ These instructions are to assist the DeployR maintainers with creating a new pro
 2. Move any open issues from the current release to the next milestone
 3. Close the current milestone
 4. Commit and push the deployr/{REPOSITORY} release and [tag](#user-content-tagging) it
+
   ```
   $ git commit -a -m 'bump to vX.Y.Z'
   $ git push origin master
   $ git tag -a vX.Y.Z -m 'Version vX.Y.Z'
   $ git push --tags origin vX.Y.Z
   ```
+  
 5. Update version fields in packages/npm/Maven to next version
 6. Build [CHANGELOG.md](#user-content-generating-changelogmd)
 7. Update the [Repository wiki](#user-content-repository-wiki) with a link to the release's `CHANGELOG.md`
