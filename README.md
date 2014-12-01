@@ -200,10 +200,12 @@ These instructions are to assist the DeployR maintainers with creating a new pro
 - Close the current milestone
 - Commit and push the deployr/{REPOSITORY} release and tag
 
-  git commit -a -m 'bump to vX.Y.Z'
-  git push origin master
-  git tag vX.Y.Z
-  git push --tags origin vX.Y.Z
+  ```
+  $ git commit -a -m 'bump to vX.Y.Z'
+  $ git push origin master
+  $ git tag -a vX.Y.Z -m 'Version vX.Y.Z'
+  $ git push --tags origin vX.Y.Z
+  ```
 
 - update version fields in packages to next version
 
