@@ -12,14 +12,14 @@ The goal of this document is to layout _git_ conventions that will aid DeployR r
   - [Repository wiki](#user-content-repository-wiki)
     - [Template](#user-content-template)
 - [Format of the commit message](#user-content-format-of-the-commit-message)
-  - Subject line
-  - Allowed <type>
-  - Allowed <scope>
-  - Message body
-  - Message footer
-  - Breaking changes
-  - Referencing issues
-- Examples
+  - [Subject line](#user-content-)
+  - [Allowed <type>](#user-content-allowed-<type>)
+  - [Allowed <scope>](#user-content-allowed-<type>)
+  - [Message body](#user-content-message-body)
+  - [Message footer](#user-content-breaking-changes)
+    - [Breaking changes](#user-content-)
+    - [Referencing issues](#user-content-referencing-issues)
+- [Examples](#user-content-examples)
 
 # Release steps
 
@@ -223,9 +223,9 @@ Just like the {subject}, the message {body} needs to be in the present tense, an
 
 ### Message Footer
 
-This sectionis where we annotate any _breaking changes_ or _closed defects_.
+This section is where we annotate any breaking changes or closing defects.
 
-- Breaking Change
+#### Breaking Change
 
 All breaking changes need to be mentioned in the footer with the description of the change, the justification behind the change and any migration notes required. For example:
 
@@ -233,7 +233,7 @@ All breaking changes need to be mentioned in the footer with the description of 
  > development, well tested and maintained. Because it introduces a new dependency,
  > users will have to run `make && make install` again to receive this change.
 
-- Closed defects
+#### Referencing issues
 
 Closed bugs should be listed on a separate line in the footer prefixed with the `closes` keyword, for example:
 
