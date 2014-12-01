@@ -213,7 +213,7 @@ The allowed {types} are as follows:
 - test (adding missing tests)
 - chore (maintenance)
 
-The {scope} can be anything specifying place of the commit change e.g. the controller, the client, the logger, ect. 
+The {scope} can be anything specifying the location of the commit change e.g. the controller, the client, the logger, ect. 
 
 The {subject} needs to use imperative, present tense: “change”, not “changed” nor “changes”. The first letter should not be capitalized, and there is no dot (.) at the end.
 
@@ -243,22 +243,42 @@ Or in the case of multiple issues:
 ## Examples
 
 - **feat (feature)**
-
+  
   feat($browser): onUrlChange event (popstate/hashchange/polling)
-
+  
   Added new event to $browser:
     - forward popstate event if available
     - forward hashchange event if popstate not available
     - do polling when neither popstate nor hashchange available
 
-  Breaks $browser.onHashChange, which was removed (use onUrlChange instead)
+  BREAKING CHANGE: $browser.onHashChange, which was removed (use onUrlChange instead)
 
-- fix (bug fix)
-- docs (documentation)
-- style (formatting)
-- refactor (refactoring)
-- test (adding missing tests)
-- chore (maintenance)
+- **fix (bug fix)**
+
+fix($compile): couple of unit tests for IE9
+
+Older IEs serialize html uppercased, but IE9 does not...
+Would be better to expect case insensitive, unfortunately jasmine does
+not allow to user regexps for throw expectations.
+
+Closes #392
+BREAKING CHANGE: foo.bar api, foo.baz should be used instead
+
+- **docs (documentation)**
+
+docs(guide): updated docs
+
+Couple of typos fixed:
+- indentation
+- missing brace
+
+- **style (formatting)**
+
+style(controller): Whitespace cleanup.
+
+- **refactor (refactoring)**
+- **test (adding missing tests)**
+- **chore (maintenance)**
 
 
 
