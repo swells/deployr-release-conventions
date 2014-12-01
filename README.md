@@ -205,13 +205,13 @@ The subject line contains a succinct description of the change to the logic.
 
 The allowed {types} are as follows:
 
-- feat -> feature
-- fix -> bug fix
-- docs -> documentation
-- style -> formatting
-- refactor
-- test -> adding missing tests
-- chore -> maintenance
+- feat (feature)
+- fix (bug fix)
+- docs (documentation)
+- style (formatting)
+- refactor (refactoring)
+- test (adding missing tests)
+- chore (maintenance)
 
 The {scope} can be anything specifying place of the commit change e.g. the controller, the client, the logger, etc.
 
@@ -228,9 +228,7 @@ This section is where we annotate any breaking changes or closing defects.
 
 All breaking changes need to be mentioned in the footer with the description of the change, the justification behind the change and any migration notes required. For example:
 
- > BREAKING CHANGE: this relies on a new screen resolution library that is in active
- > development, well tested and maintained. Because it introduces a new dependency,
- > users will have to run `make && make install` again to receive this change.
+ > BREAKING CHANGE: The API interface `pipeline()` has been changed to `batch()`.
 
 #### Referencing issues
 
