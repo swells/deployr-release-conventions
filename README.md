@@ -242,3 +242,26 @@ Or in the case of multiple issues:
 
 ## Examples
 
+- feat (feature)
+
+  feat($browser): onUrlChange event (popstate/hashchange/polling)
+
+  Added new event to $browser:
+    - forward popstate event if available
+    - forward hashchange event if popstate not available
+    - do polling when neither popstate nor hashchange available
+
+  Breaks $browser.onHashChange, which was removed (use onUrlChange instead)
+
+- fix (bug fix)
+- docs (documentation)
+- style (formatting)
+- refactor (refactoring)
+- test (adding missing tests)
+- chore (maintenance)
+
+
+
+
+
+
