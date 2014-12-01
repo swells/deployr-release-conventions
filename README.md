@@ -255,29 +255,44 @@ Or in the case of multiple issues:
 
 - **fix (bug fix)**
 
-fix($compile): couple of unit tests for IE9
+  fix($compile): couple of unit tests for IE9
 
-Older IEs serialize html uppercased, but IE9 does not...
-Would be better to expect case insensitive, unfortunately jasmine does
-not allow to user regexps for throw expectations.
+  Older IEs serialize html uppercased, but IE9 does not...
+  Would be better to expect case insensitive, unfortunately jasmine does
+  not allow to user regexps for throw expectations.
 
-Closes #392
-BREAKING CHANGE: foo.bar api, foo.baz should be used instead
+  Closes #392
+  
+  BREAKING CHANGE: foo.bar api, foo.baz should be used instead
 
 - **docs (documentation)**
 
-docs(guide): updated docs
+  docs(guide): updated docs
 
-Couple of typos fixed:
-- indentation
-- missing brace
+  Couple of typos fixed:
+  - indentation
+  - missing brace
 
 - **style (formatting)**
 
-style(controller): Whitespace cleanup.
+  style(controller): Whitespace cleanup.
 
 - **refactor (refactoring)**
+ 
+  refactor(controller): Broke public function foo() up into samller private functions.
+
+  public function foo() internally calls:
+  - bar()
+  - baz()
+
 - **test (adding missing tests)**
+
+  test(controller): Added new test spec for authentication and cookies.
+
+  Cookie check:
+  - before
+  - after
+  
 - **chore (maintenance)**
 
 
