@@ -13,6 +13,7 @@ The goal of this document is to layout _git_ conventions that will aid DeployR r
     - [Generating CHANGELOG.md](#user-content-generating-changelogmd)
   - [Repository wiki](#user-content-repository-wiki)
     - [Template](#user-content-template)
+  - [Release checklist](#release-checklist)
 - [Format of the commit message](#user-content-format-of-the-commit-message)
   - [Subject line](#user-content-subject-line)
   - [Message body](#user-content-message-body)
@@ -189,6 +190,22 @@ TDB
 - Link --> Contribution Standards (TBD)
 
 ```
+
+## Release checklist
+
+These instructions are to assist the DeployR maintainers with creating a new product release. 
+
+- Create the next milestone
+- Move any open issues from the current release to the next milestone
+- Close the current milestone
+- Commit and push the deployr/{REPOSITORY} release and tag
+
+  git commit -a -m 'bump to vX.Y.Z'
+  git push origin master
+  git tag vX.Y.Z
+  git push --tags origin vX.Y.Z
+
+- update version fields in packages to next version
 
 ## Format of the Commit Message
 
