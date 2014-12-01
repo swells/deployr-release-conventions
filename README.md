@@ -151,7 +151,7 @@ The generated `CHANGELOG.md` will contain three sections:
 
 ## Repository wiki
 
-Each repository should have a wiki that follows the [template](#template) below. The official user guides and API documents are hosted on [deployr.revolutionanalytics.com](http://deployr.revolutionanalytics.com) when appropriate. The repository's wiki is where you can maintain a living document that are relevant to the people who are interested in contributing code or feedback.
+Each repository should have a wiki that follows the [template](#template) below. The official user guides and API documents are hosted on [deployr.revolutionanalytics.com](http://deployr.revolutionanalytics.com) when appropriate. The repository's wiki is where you can maintain a living document is relevant to the people who are interested in contributing code or feedback.
 
 ### Template
 
@@ -162,6 +162,23 @@ Each repository should have a wiki that follows the [template](#template) below.
 http://deployr.revolutionanalytics.com. This wiki is where we maintain 
 a living document that is relevant to the people who are interested in 
 contributing code or feedback.
+
+# Active Development on {YOUR_REPOSITORY}
+
+- Link (Development-Schedule.md) --> Development Schedule - Code freeze dates and important milestones.
+- Link (Ongoing-Development-Discussions.md) --> Ongoing Development Discussions
+- Link (Github query) --> Sprint {SPRINT_NUMBER} Tickets - Active issues earmarked for the next release.
+
+  This link can be built using the follwing URL:
+
+   <a https://github.com/deployr/{YOUR_REPOSITORY}/issues?
+    direction=desc&amp;
+    labels=&amp;
+    milestone={SPRINT_NUMBER}&amp;
+    page=1&amp;
+    sort=created&amp;
+    state=open">Sprint {SPRINT_NUMBER} Tickets
+    </a>
 
 # Current Release
 
