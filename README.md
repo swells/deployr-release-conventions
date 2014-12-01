@@ -1,6 +1,8 @@
 DeployR Release Conventions
 ===========================
 
+*@@ Work in Progress @@*
+
 The goal of this document is to layout _git_ conventions that will aid DeployR releases in order to inform the public of what changes have been made in each version. This is necessary both at the development and release stages such that the user can make a decision about when to upgrade. 
 
 - [Release steps](#user-content-release-steps)
