@@ -30,7 +30,6 @@ These instructions are to assist the DeployR maintainers with creating a new pro
 2. Move any open issues from the current release to the next milestone
 3. Close the current milestone
 4. Commit and push the deployr/{REPOSITORY} release and [tag](#user-content-tagging) it
-
   ```
   $ git commit -a -m 'bump to vX.Y.Z'
   $ git push origin master
