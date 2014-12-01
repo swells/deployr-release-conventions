@@ -151,7 +151,17 @@ The generated `CHANGELOG.md` will contain three sections:
 
 ## Repository wiki
 
-Each repository should have a wiki that follows the [template](#template) below. The official user guides and API documents are hosted on [deployr.revolutionanalytics.com](http://deployr.revolutionanalytics.com) when appropriate. The repository's wiki is where you can maintain a living document is relevant to the people who are interested in contributing code or feedback.
+Each repository should have a [wiki](https://help.github.com/articles/adding-wiki-pages-via-the-online-interface/) that follows the [template](#template) below. The official user guides and API documents are hosted on [deployr.revolutionanalytics.com](http://deployr.revolutionanalytics.com) when appropriate. The repository's wiki is where you can maintain a living document that is relevant to the people who are interested in contributing code or feedback. Each repository should take full advantage of Github wiki's add include:
+
+
+- `Development-Schedule.md`
+
+  This page provides details on DeployR's development schedule, including code freeze dates and target dates for preview and stable releases. These dates are subject to change.
+
+- `Ongoing-Development-Discussions.md`
+  This page is for tracking current design proposals and code reviews. Usually, design proposals take the form of  gists, and code reviews pull requests, though that's not always the case.
+
+- 
 
 ### Template
 
