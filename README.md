@@ -17,7 +17,7 @@ The goal of this document is to layout _git_ conventions that will aid DeployR r
   - [Message footer](#user-content-breaking-changes)
     - [Breaking changes](#user-content-breaking-changes)
     - [Referencing issues](#user-content-referencing-issues)
-- [Examples](#user-content-examples)
+  - [Examples](#user-content-examples)
 
 # Release steps
 
