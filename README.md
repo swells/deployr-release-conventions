@@ -213,12 +213,12 @@ The allowed {types} are as follows:
 - test (adding missing tests)
 - chore (maintenance)
 
-The {scope} can be anything specifying place of the commit change e.g. the controller, the client, the logger, etc.
+The {scope} can be anything specifying place of the commit change e.g. the controller, the client, the logger, ect. 
 
 The {subject} needs to use imperative, present tense: “change”, not “changed” nor “changes”. The first letter should not be capitalized, and there is no dot (.) at the end.
 
 ### Message Body
-Just like the {subject}, the message {body} needs to be in the present tense, and includes the motivation for the change, as well as a contrast with the previous behavior.
+Just like the {subject}, the message {body} needs to be in the present tense, and includes the motivation for the change, as well as a contrast with the previous behaviour.
 
 ### Message Footer
 
