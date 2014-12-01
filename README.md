@@ -12,9 +12,7 @@ The goal of this document is to layout _git_ conventions that will aid DeployR r
   - [Repository wiki](#user-content-repository-wiki)
     - [Template](#user-content-template)
 - [Format of the commit message](#user-content-format-of-the-commit-message)
-  - [Subject line](#user-content-)
-  - [Allowed <type>](#user-content-allowed)
-  - [Allowed <scope>](#user-content-allowed)
+  - [Subject line](#user-content-subject-line)
   - [Message body](#user-content-message-body)
   - [Message footer](#user-content-breaking-changes)
     - [Breaking changes](#user-content-breaking-changes)
@@ -225,7 +223,7 @@ Just like the {subject}, the message {body} needs to be in the present tense, an
 
 This section is where we annotate any breaking changes or closing defects.
 
-#### Breaking Change
+#### Breaking Changes
 
 All breaking changes need to be mentioned in the footer with the description of the change, the justification behind the change and any migration notes required. For example:
 
