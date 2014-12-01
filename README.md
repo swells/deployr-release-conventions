@@ -223,19 +223,25 @@ Just like the {subject}, the message {body} needs to be in the present tense, an
 
 ### Message Footer
 
+This sectionis where we annotate any _breaking changes_ or _closed defects_.
+
+- Breaking Change
+
 All breaking changes need to be mentioned in the footer with the description of the change, the justification behind the change and any migration notes required. For example:
 
  > BREAKING CHANGE: this relies on a new screen resolution library that is in active
  > development, well tested and maintained. Because it introduces a new dependency,
  > users will have to run `make && make install` again to receive this change.
 
-### Referencing Issues
-Closed bugs should be listed on a separate line in the footer prefixed with the “closes” keyword like this:
+- Closed defects
 
-closes #123
+Closed bugs should be listed on a separate line in the footer prefixed with the `closes` keyword, for example:
+
+`closes #54321`
+
 Or in the case of multiple issues:
 
-closes #123, #456, #789
+`closes #54321, #9876, #12345`
 
 ## Examples
 
