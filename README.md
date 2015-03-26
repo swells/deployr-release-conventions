@@ -256,7 +256,7 @@ Release notes should be brief and contain the following:
 {footer}
 ```
 
-Any line of the commit message cannot be longer than 90 characters, with the subject line limited to 70 characters. This allows the message to be easier to read on github as well as in various git tools.
+Any line of the commit message cannot be longer than 80 characters, with the subject line limited to 70 characters. This allows the message to be easier to read on github as well as in various git tools.
 
 ### Subject Line
 The subject line contains a succinct description of the change to the logic.
