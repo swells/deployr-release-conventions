@@ -549,11 +549,11 @@ Release notes should be brief and contain the following:
 
 3. A note on how to get a hold of the release via git: 
 
-Example:
+   Example:
 
-```
-$ git checkout v3.2.0
-```
+   ```
+   $ git checkout v3.2.0
+   ```
 
 4. The attached binary zip of the release build (download this for local deployments)
 (Not appropriate for RRO since the download bundles are served up from the MRAN site).
