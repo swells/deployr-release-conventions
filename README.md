@@ -353,4 +353,23 @@ Or in the case of multiple issues:
   
 - **chore (maintenance)**
 
+# RRO Release Guidelines
+
+> Status: Working Draft
+
+## Main Branches
+
+### master
+
+We will consider origin/master to be the main branch where the source code of HEAD always reflects a production-ready state. As a result, each time when changes are merged back into master, this is a new production release.
+
+### dev
+
+Parallel  to mater is dev. The dev branch is intended for the next release and is where all nightly builds are done from.
+
+Once an RRO release is identified and dev is stable and ready to begin the release process, all changes in dev need to 'make their way' to master and then tagged with a release number. The process of how dev is merged to master and tagged is outlined below.
+
+
+
+
 
