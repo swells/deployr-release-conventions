@@ -412,3 +412,101 @@ They will eventually be removed.
   hotfix-v3.2.1+1
   hotfix-v3.2.1+2 
   hotfix-v3.2.1+3
+
+### Originating branch (Important)
+
+- Release branches
+
+  Branched off from dev
+
+- Hotfix branches
+
+  Branched off from master
+
+### Merging back
+
+- Release branches
+
+  Must merge back to both master and dev
+
+- Hotfix branches
+
+  Must merge back to both master and dev
+
+__@NOTE__  - Typically any changes made in these branches are merged back into both dev and master however there may be situations where this rule is ignored. For example, a defect corrected in a hotfix branch is now obsoleted in dev for the next release. 
+
+### Lifecycle
+
+1. Creating
+
+   - Release branches
+
+   ```
+   $ git checkout -b release-v3.2.0 dev
+  ```
+
+- Hotfix branches
+
+```
+$ git checkout -b hotfix-v3.2.0+1 master
+```
+
+2. Finishing
+
+When finished, the defect or change needs to be merged back into master and dev. This done in order to safeguard that the defector change is included in the next release as well.
+
+Merge to master
+
+- Release branches
+
+```
+$ git checkout master
+$ git merge --no-ff release-v3.2.0 
+$ git tag -a v3.2.0 -m 'Version v3.2.0'
+$ git push
+```
+
+- Hotfix branches
+
+```
+$ git checkout master
+$ git merge --no-ff hotfix-v3.2.0+1 
+$ git tag -a v3.2.0+1 -m 'Version v3.2.0+1'
+$ git push
+```
+
+Merge to dev
+
+@NOTE - There is a good possibility that merge conflicts will occur during this step
+since dev is evolving in parallel for the next release. If conflicts are present, fix, verify,  and commit the resolution.
+
+- Release branches
+
+```
+$ git checkout dev
+$ git merge --no-ff release-v3.2.0 
+$ git push
+```
+
+- Hotfix branches
+
+```
+$ git checkout dev
+$ git merge --no-ff hotfix-v3.2.0+1 
+$ git push
+```
+
+Removing
+
+Once the hotfix or release branches are no longer needed they can be removed.
+Remember these branches are temporary and should be deleted at some point to keep the repository clean and tidy. The decision of when to remove these branches is up to you.
+
+Example:
+
+```
+$ git branch -d release-v3.2.0
+```
+
+```
+$ git branch -d hotfix-v3.2.0+1
+```
