@@ -387,3 +387,28 @@ Supports post release changes such as critical bug fixes that have been targeted
 
 Unlike master* and dev* these branches are temporary and have a limited lifespan. 
 They will eventually be removed.
+
+## Branching Rules
+
+### Naming convention
+
+- Release branches
+
+  release-v{R MAJOR}.{R MINOR}.{R PATCH}
+
+  Examples:
+
+  release-v3.2.0
+  release-v3.2.1
+
+- Hotfix branches
+
+  hotfix-v{R MAJOR}.{R MINOR}.{R PATCH}+{RRO PATCH COUNT}
+
+  Examples:
+
+  hotfix-v3.2.0+1
+  hotfix-v3.2.0+2
+  hotfix-v3.2.1+1
+  hotfix-v3.2.1+2 
+  hotfix-v3.2.1+3
