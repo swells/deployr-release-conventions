@@ -522,9 +522,9 @@ In Github:
 
 3. Choose the Tag version from the drop-down list 
 
-4. Give the release a title based on the semantic version. Release titles should  adhere to the release title conventions.
+4. Give the release a title based on the semantic version. Release titles shouldadhere to the [release title conventions](#release-title-convention).
 
-5. Add release notes. Release notes should adhere to the release notes conventions.
+5. Add release notes. Release notes should adhere to the [release notes conventions](#release-notes-convention).
 
 6. If appropriate, attached the release binaries by dragging and dropping them to the page or via the file chooser. (Not appropriate for RRO since the download bundles are served up from the MRAN site).
 
