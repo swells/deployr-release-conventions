@@ -562,31 +562,31 @@ Release notes should be brief and contain the following:
 
 Changelogs are important in order to understand how previous versions are different from the current release. A script at the end of a release will generate all changelogs. At the very least, a skeleton changelog will be emitted. Editing a changelog before the actual release is permitted.
 
-Generating CHANGELOG.md
+__Generating CHANGELOG.md__
 
 The generated CHANGELOG.md will contain three sections:
 
-New features
+1. New features
 
-New features in this release:
+   New features in this release:
 
-```
-$ git log <last release> HEAD --grep feat
-```
+   ```
+   $ git log <last release> HEAD --grep feat
+   ```
 
-Bug fixes
+2. Bug fixes
 
-```
-$ git log <last release> HEAD --grep fix
-```
+   ```
+   $ git log <last release> HEAD --grep fix
+   ```
 
-Breaking changes
+3. Breaking changes
 
-```
-$ git log <last release> HEAD --grep BREAKING
-```
+   ```
+   $ git log <last release> HEAD --grep BREAKING 
+   ```
 
-__@Note__ - Until someone has the time to build this script in Jenkins to generate a changelog the Github `compare API` can be used and displayed as a link in the Github release notes:
+__@Note__ - Until someone has the time to build this script in Jenkins to generate a changelog the Github [compare API](https://help.github.com/articles/comparing-commits-across-time/) can be used and displayed as a link in the Github release notes:
 
 Example (changes from v3.2.0 – to – v3.2.1):
 
