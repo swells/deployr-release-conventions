@@ -369,7 +369,8 @@ Parallel  to mater is dev. The dev branch is intended for the next release and i
 
 Once an RRO release is identified and dev is stable and ready to begin the release process, all changes in dev need to 'make their way' to master and then tagged with a release number. The process of how dev is merged to master and tagged is outlined below.
 
+![branching workflow](/images/branch-workflow.png)
 
+##### Figure 1. Basic branching workflow.
 
-
-
+__@NOTE__ – dev* should never be merged directly to master*
