@@ -536,8 +536,8 @@ The title of a release should only contain its corresponding semantic version mi
 
 For example, the release title for version:
 
-v3.2.0   ----> RRO 3.2.0
-v3.2.0+1 ----> RRO 3.2.0+1
+- v3.2.0   ----> RRO 3.2.0
+- v3.2.0+1 ----> RRO 3.2.0+1
 
 ### Release Notes Convention
 
@@ -570,20 +570,27 @@ New features
 
 New features in this release:
 
+```
 $ git log <last release> HEAD --grep feat
+```
 
 Bug fixes
 
+```
 $ git log <last release> HEAD --grep fix
+```
 
 Breaking changes
 
+```
 $ git log <last release> HEAD --grep BREAKING
+```
 
-@Note - Until someone has the time to build this script in Jenkins to generate a changelog the Github `compare API` can be used and displayed as a link in the Github release notes:
+__@Note__ - Until someone has the time to build this script in Jenkins to generate a changelog the Github `compare API` can be used and displayed as a link in the Github release notes:
 
 Example (changes from v3.2.0 – to – v3.2.1):
 
+```
 [v3.2.0...v3.2.1](https://github.com/RevolutionAnalytics/RRO/compare/v3.2.0...v3.2.1)
-
+```
 
