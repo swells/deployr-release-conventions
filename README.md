@@ -439,11 +439,11 @@ __@NOTE__  - Typically any changes made in these branches are merged back into b
 
 1. Creating
 
-   - Release branches
+- Release branches
 
-   ```
-   $ git checkout -b release-v3.2.0 dev
-  ```
+```
+$ git checkout -b release-v3.2.0 dev
+```
 
 - Hotfix branches
 
@@ -455,7 +455,7 @@ $ git checkout -b hotfix-v3.2.0+1 master
 
 When finished, the defect or change needs to be merged back into master and dev. This done in order to safeguard that the defector change is included in the next release as well.
 
-Merge to master
+### Merge to master
 
 - Release branches
 
@@ -475,7 +475,7 @@ $ git tag -a v3.2.0+1 -m 'Version v3.2.0+1'
 $ git push
 ```
 
-Merge to dev
+### Merge to dev
 
 @NOTE - There is a good possibility that merge conflicts will occur during this step
 since dev is evolving in parallel for the next release. If conflicts are present, fix, verify,  and commit the resolution.
@@ -496,10 +496,9 @@ $ git merge --no-ff hotfix-v3.2.0+1
 $ git push
 ```
 
-Removing
+### Removing
 
-Once the hotfix or release branches are no longer needed they can be removed.
-Remember these branches are temporary and should be deleted at some point to keep the repository clean and tidy. The decision of when to remove these branches is up to you.
+Once the hotfix or release branches are no longer needed they can be removed. Remember these branches are temporary and should be deleted at some point to keep the repository clean and tidy. The decision of when to remove these branches is up to you.
 
 Example:
 
@@ -510,3 +509,81 @@ $ git branch -d release-v3.2.0
 ```
 $ git branch -d hotfix-v3.2.0+1
 ```
+
+## RRO Github Release
+
+Once the master branch has been tagged with the appropriate release points, we  can begin to prepare that tag for a release. Marking the tagged historical version as a release is done from Github using their Releases Workflow.
+
+In Github:
+
+1. Click the ‘releases’ link at the top of the repository.
+
+2. Click the ‘Create a new release’ button.
+
+3. Choose the Tag version from the drop-down list 
+
+4. Give the release a title based on the semantic version. Release titles should  adhere to the release title conventions.
+
+5. Add release notes. Release notes should adhere to the release notes conventions.
+
+6. If appropriate, attached the release binaries by dragging and dropping them to the page or via the file chooser. (Not appropriate for RRO since the download bundles are served up from the MRAN site).
+
+7. Finally, publish the tagged release by clicking the ‘Publish release’ button.
+
+### Release Title Convention
+
+The title of a release should only contain its corresponding semantic version minus the “v” from the version string. In addition, if the semantic version contains a prerelease identifier replace the delimited - character with a space.
+
+For example, the release title for version:
+
+v3.2.0   ----> RRO 3.2.0
+v3.2.0+1 ----> RRO 3.2.0+1
+
+### Release Notes Convention
+
+Release notes should be brief and contain the following:
+
+1. A Release Announcement link. This link will point to the official marketing announcement.
+
+2. A Change History Rollup link. See the change log section for more information on how to create it.
+
+3. A note on how to get a hold of the release via git: 
+
+Example:
+
+```
+$ git checkout v3.2.0
+```
+
+4. The attached binary zip of the release build (download this for local deployments)
+(Not appropriate for RRO since the download bundles are served up from the MRAN site).
+
+### Change log
+
+Changelogs are important in order to understand how previous versions are different from the current release. A script at the end of a release will generate all changelogs. At the very least, a skeleton changelog will be emitted. Editing a changelog before the actual release is permitted.
+
+Generating CHANGELOG.md
+
+The generated CHANGELOG.md will contain three sections:
+
+New features
+
+New features in this release:
+
+$ git log <last release> HEAD --grep feat
+
+Bug fixes
+
+$ git log <last release> HEAD --grep fix
+
+Breaking changes
+
+$ git log <last release> HEAD --grep BREAKING
+
+@Note - Until someone has the time to build this script in Jenkins to generate a changelog the Github `compare API` can be used and displayed as a link in the Github release notes:
+
+Example (changes from v3.2.0 – to – v3.2.1):
+
+[v3.2.0...v3.2.1](https://github.com/RevolutionAnalytics/RRO/compare/v3.2.0...v3.2.1)
+
+
