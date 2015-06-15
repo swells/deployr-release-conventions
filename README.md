@@ -374,3 +374,16 @@ Once an RRO release is identified and dev is stable and ready to begin the relea
 ##### Figure 1. Basic branching workflow.
 
 __@NOTE__ – dev* should never be merged directly to master*
+
+## Reinforcement Branches
+
+### Release 
+
+Supports the preparation of a new production release. Last minute minor bug fixes and changes are appropriate for this branch. Once a release branch is created the dev branch is open for changes intended for the next release.
+
+### Hotfix 
+
+Supports post release changes such as critical bug fixes that have been targeted and deemed mandatory for the current live release.
+
+Unlike master* and dev* these branches are temporary and have a limited lifespan. 
+They will eventually be removed.
